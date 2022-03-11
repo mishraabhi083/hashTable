@@ -14,3 +14,4 @@ typedef struct hash{
 void insertData(hashmap *ht , int data);
 void hashInitializer(hashmap* ht);
 int retrive(hashmap* ht,int data);
+int display(hashmap* ht);

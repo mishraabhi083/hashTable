@@ -38,3 +38,17 @@ int retrive(hashmap* ht,int data){
     }
     return 0;
 }
+
+int display(hashmap* ht){
+    
+    for(int i=0;i<10;i++){
+        Node* tracer = ht->coloumns[i];
+        printf("[key]->");
+        while(tracer){
+            printf("%d ->",tracer->data);
+            tracer=tracer->next;
+        }
+        printf("\n");
+    }
+    return 0;
+}
